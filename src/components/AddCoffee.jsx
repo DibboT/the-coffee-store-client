@@ -3,10 +3,10 @@
 const AddCoffee = () => {
     return (
         <div className="bg-[#F4F3F0] p-24">
-            <h2 className="text-center mb-10 text-3xl font-bold">Add Coffee</h2>
+            <h2 className="text-center mb-4 text-3xl font-bold">Add Coffee</h2>
             <form>
                 {/*Form Row: Coffee Name And Quantity */}
-                <div className="flex">
+                <div className="flex mb-6">
                     <div className="form-control md:w-1/2">
                         <label className="label text">
                             <span className="label-text">Coffee Name</span>
@@ -27,7 +27,7 @@ const AddCoffee = () => {
 
                 </div>
                 {/*Form Row: Supplier And Taste */}
-                <div className="flex">
+                <div className="flex mb-6">
                     <div className="form-control md:w-1/2">
                         <label className="label text">
                             <span className="label-text">Supplier</span>
@@ -48,7 +48,7 @@ const AddCoffee = () => {
 
                 </div>
                 {/*Form Row: Category and Details */}
-                <div className="flex">
+                <div className="flex mb-6">
                     <div className="form-control md:w-1/2">
                         <label className="label text">
                             <span className="label-text">Category</span>
@@ -68,6 +68,19 @@ const AddCoffee = () => {
                     </div>
 
                 </div>
+                {/*Form Row: Photo Url */}
+                <div className="flex mb-6">
+                    <div className="form-control md:w-1/2">
+                        <label className="label text">
+                            <span className="label-text">Photo Url</span>
+                        </label>
+                        <label className="input-group">
+                            
+                            <input type="text" name="photo" placeholder="Photo Url" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" value="Add Coffee" className="btn btn-block btn-primary" />
             </form>
         </div>
     );
