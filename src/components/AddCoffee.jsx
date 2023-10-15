@@ -1,10 +1,13 @@
 
 
 const AddCoffee = () => {
+    const handleAddCoffee = event => {
+        event.preventDefault();
+    }
     return (
         <div className="bg-[#F4F3F0] p-24">
             <h2 className="text-center mb-4 text-3xl font-bold">Add Coffee</h2>
-            <form>
+            <form onSubmit={handleAddCoffee}>
                 {/*Form Row: Coffee Name And Quantity */}
                 <div className="flex mb-6">
                     <div className="form-control md:w-1/2">
